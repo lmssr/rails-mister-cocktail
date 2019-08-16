@@ -1,0 +1,12 @@
+<h1>Mister Cocktail</h1>
+<br>
+  <div class="cards">
+    <% @cocktails.each do |cocktail| %>
+      <a href= <%= cocktail_path(cocktail) %> >
+
+        <%= cocktail.name %>
+
+      </a>
+    <%end %>
+  </div>
+
